@@ -20,8 +20,8 @@ resource "rancher2_node_template" "hetzner_create_template" {
   hetzner_config {
     api_token       = var.hcloud_token
     image           = "ubuntu-20.04"
-    server_type     = "cx31"
-    server_location = "hel1"
+    server_type     = "cx21"
+    server_location = "nbg1"
     networks        = var.private_network_name
   }
 }
